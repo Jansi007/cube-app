@@ -1,0 +1,17 @@
+#topBar{
+	width: 10vw;
+	font-family: 'Lato', sans-serif;
+	font-size: 4vh;
+	margin: 4vh;
+	background-color: #eeeeee;
+	padding: 2vh 2vh 2vh 2vh;
+	box-shadow: 0 0 50px #888888;
+	border-radius: 6vh;
+	text-align: center;
+}
+
+#topBar:hover{
+	color: #a03c3c;
+	transition: .2s;
+	cursor: pointer;
+}

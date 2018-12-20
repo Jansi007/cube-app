@@ -1,13 +1,25 @@
-import React from 'react';
+import React,{Component} from 'react';
+import './Timer.css';
 
-const Timer = () =>{
-	return(
-		<div>
+class Timer extends Component{
+	
+	{
+		document.getElementById('time').style = "background-color: black;"
+	}
 
-			
+	render(){
+		return(
+			<div>
 
-		</div>
-	)
+				<div className="" id="timeBase">
+						<div className="" id="timer">
+							<h1 id="time">00 : 00 : 00</h1>
+						</div>
+				</div>
+		
+			</div>
+		);
+	}
 }
 
 export default Timer;

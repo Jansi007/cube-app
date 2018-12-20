@@ -1,0 +1,11 @@
+#avrgBar{
+	width: 16vw;
+	font-family: 'Lato', sans-serif;
+	font-size: 4vh;
+	padding: 2vh 0 2vh 0;
+	margin: 4vh;
+	background-color: #eeeeee;
+	box-shadow: 0 0 50px #888888;
+	border-radius: 6vh;
+	text-align: center;
+}

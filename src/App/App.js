@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import Timer from '../Timer/Timer'
+import Left from '../Left/Left';
+import Mid from '../Mid/Mid';
+import Right from '../Right/Right';
 
 class App extends Component {
 	render() {
     	return (
-      		<div className="App">
+      		<div className="App" id="appWrapper">
 				
-				<Timer />
+				<Left />
+				<Mid />
+				<Right />
 
     		</div>
     	);

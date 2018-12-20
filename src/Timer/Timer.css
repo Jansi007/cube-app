@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#base{
+	width: 100%;
+	height: 100%;
+}
+
+.see1{
+	background-color: #eeeeeeaa;
+}
+
+.see2{
+	background-color: #ddddddaa;
+}
+
+.see3{
+	background-color: #ccccccaa;	
+}
+
+#base{
+	display: flex;
+}
+
+#timeBase{
+	margin: 0;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	z-index: 1;
+}
+
+#timer{
+	background-color: #eeeeee;
+	border: 1vh solid #eeeeee;
+	border-radius: 40vh;
+	width: 60vh;
+	height: 60vh;
+	box-shadow: 0 0 100px #888888;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#time{
+	font-family: 'Lato', sans-serif;
+	font-size: 10vh;
+	margin: 0 !important;
+	padding: 0;
+}
+
+#topBar{
+	width: 10vw;
+	font-family: 'Lato', sans-serif;
+	font-size: 4vh;
+	margin: 4vh;
+	background-color: #eeeeee;
+	padding: 2vh 2vh 2vh 2vh;
+	box-shadow: 0 0 50px #888888;
+	border-radius: 6vh;
+	text-align: center;
+}
+
+#topBar:hover{
+	color: #a03c3c;
+	transition: .2s;
+	cursor: pointer;
+}
+
+#avrgBar{
+	width: 16vw;
+	font-family: 'Lato', sans-serif;
+	font-size: 4vh;
+	padding: 2vh 0 2vh 0;
+	margin: 4vh;
+	background-color: #eeeeee;
+	box-shadow: 0 0 50px #888888;
+	border-radius: 6vh;
+	text-align: center;
+}
