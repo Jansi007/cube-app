@@ -2,10 +2,8 @@ import React,{Component} from 'react';
 import './Timer.css';
 
 class Timer extends Component{
-	
-	{
-		document.getElementById('time').style = "background-color: black;"
-	}
+
+	component
 
 	render(){
 		return(
