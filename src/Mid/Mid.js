@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Timer from '../Timer/Timer';
+import ScrambleBar from '../ScrambleBar/ScrambleBar';
 import AverageBar from '../AverageBar/AverageBar';
-import ResetBar from '../ResetBar/ResetBar';
 import './Mid.css';
 
 class Mid extends Component{
@@ -9,7 +9,7 @@ class Mid extends Component{
 		return(
 			<div id="midWrapper">
 
-				<ResetBar />
+				<ScrambleBar />
 				<Timer id="timer"/>
 				<AverageBar />
 
