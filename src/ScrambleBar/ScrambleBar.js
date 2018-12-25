@@ -3,20 +3,25 @@ import './ScrambleBar.css';
 
 class ScrambleBar extends Component{
 	componentDidMount(){
-		const scrambleBar = document.getElementById('scrambleBar');
-		const scrambleList = ["R ", "R' ", "R2 ", "L ", "L' ", "L2 ", "U ", "U' ", "U2 ", "D ", "D' ", "D2 ", "F ", "F' ", "F2 ", "B ", "B' ", "B2 "];
-		let scramble = '';
+		const scrambleBar = document.getElementById('scrambleBar'); 
+		const scrambleList = [" R ", " R' ", " R2 ", " L ", " L' ", " L2 ", " U ", " U' ", " U2 ", " D ", " D' ", " D2 ", 
+								" F ", " F' ", " F2 ", " B ", " B' ", " B2 "];
 
-		for(let i = 0; i < 16; i++){
-			scramble += scrambleList[Math.random() * scrambleList.length];
+		function scrambleNew(){
+			let scramble = '';
+			for(let i = 0; i < 16; i++){
+				scramble += scrambleList[Math.floor(Math.random() * scrambleList.length)];
+
+				scrambleBar.innerHTML = scramble;
+			}
 		}
 
-		console.log(scramble)
+		scrambleNew();
 	}
 	render(){
 		return(
 				<div>
-					<h1 id="scrambleBar"></h1>
+					<h1 id="scrambleBar" onclick="scrambleNew()"></h1>
 				</div>
 			);
 	}
